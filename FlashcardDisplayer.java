@@ -166,7 +166,7 @@ public class FlashcardDisplayer {
 
    private String enterCommandWord() {                     // this asks the user to input a command word, and if it is not equal to one of the three
      Scanner keyboard = new Scanner(System.in);            // available command words ("quiz", "save", "exit"), it asks the user to input a command word again.
-     System.out.println("Enter a command:");
+     System.out.println("Enter a command - quiz, save, or exit:");
      String commandWord = keyboard.nextLine();
      while (!commandWord.equals("quiz") && !commandWord.equals("save") && !commandWord.equals("exit")) {
        System.err.println("That command word does not exist. Please try either 'quiz', 'save' or 'exit'");
